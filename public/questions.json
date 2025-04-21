@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "category": "htmlcss",
+    "question": "Qual a diferença entre `id` e `class` no HTML?",
+    "options": [
+      "id pode ser usado várias vezes, class não",
+      "id é único na página, class pode ser reutilizada",
+      "id é usado só em CSS, class é só para JS",
+      "id não existe mais no HTML5"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 2,
+    "category": "htmlcss",
+    "question": "O que é o Box Model no CSS?",
+    "options": [
+      "Um sistema de grid flexível",
+      "Uma forma de estilizar imagens",
+      "A estrutura de layout formada por content, padding, border e margin",
+      "Um tipo de display especial para mobile"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 3,
+    "category": "htmlcss",
+    "question": "Para que serve o atributo `alt` na tag `<img>`?",
+    "options": [
+      "Aplicar filtros na imagem",
+      "Descrever a imagem para acessibilidade e SEO",
+      "Deixar a imagem responsiva",
+      "Carregar imagens automaticamente"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 4,
+    "category": "htmlcss",
+    "question": "Qual a diferença entre `position: relative` e `absolute`?",
+    "options": [
+      "Relative posiciona em relação à página, absolute ao elemento pai",
+      "Relative é mais leve, absolute é pesado",
+      "Absolute remove o elemento da página",
+      "Relative permite usar z-index, absolute não"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 5,
+    "category": "htmlcss",
+    "question": "O que significa “semântica” no HTML?",
+    "options": [
+      "Uso de animações com significado",
+      "Usar CSS dentro do HTML",
+      "Dar significado ao conteúdo com tags apropriadas como `<article>`, `<nav>`, etc.",
+      "Usar comentários explicativos no código"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 6,
+    "category": "javascripttypescript",
+    "question": "Qual a diferença entre `var`, `let` e `const`?",
+    "options": [
+      "var e const são iguais, let é diferente",
+      "let e const têm escopo de bloco, var não",
+      "const pode ser alterado, var não",
+      "let tem escopo global, var não"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 7,
+    "category": "javascripttypescript",
+    "question": "O que é uma closure em JavaScript?",
+    "options": [
+      "Uma função que retorna outra função",
+      "Uma função que lembra do seu escopo mesmo depois de executada",
+      "Um método exclusivo do TypeScript",
+      "Um bug causado por escopos"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 8,
+    "category": "javascripttypescript",
+    "question": "O que é uma Promise?",
+    "options": [
+      "Um tipo de loop assíncrono",
+      "Uma função que nunca retorna",
+      "Um objeto que representa uma operação assíncrona e seu resultado futuro",
+      "Uma variável reservada do JavaScript"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 9,
+    "category": "javascripttypescript",
+    "question": "Quais as vantagens do TypeScript sobre JavaScript puro?",
+    "options": [
+      "Permite usar mais `var`",
+      "Evita erros em tempo de compilação com tipagem estática",
+      "É mais rápido que JavaScript",
+      "Não precisa de transpiler"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 10,
+    "category": "javascripttypescript",
+    "question": "Como funciona a tipagem no TypeScript?",
+    "options": [
+      "Tipagem dinâmica e fraca",
+      "Tipagem forte e implícita",
+      "Tipagem estática e explícita (mas pode ser inferida)",
+      "Não há tipagem no TypeScript"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 11,
+    "category": "reacttailwind",
+    "question": "Qual a diferença entre componente de classe e componente funcional no React?",
+    "options": [
+      "Classe é usada para estilização, função para lógica",
+      "Componentes de classe usam estado com `this`, funcionais usam hooks",
+      "Componentes funcionais não podem receber props",
+      "Classe é mais rápida que função"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 12,
+    "category": "reacttailwind",
+    "question": "O que são Hooks no React?",
+    "options": [
+      "Funções para estilizar componentes",
+      "Funções que permitem usar estado e outras features do React em componentes funcionais",
+      "Bibliotecas externas do React",
+      "APIs usadas para chamadas HTTP"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 13,
+    "category": "reacttailwind",
+    "question": "Para que serve o `useEffect` no React?",
+    "options": [
+      "Criar componentes",
+      "Definir estados",
+      "Lidar com efeitos colaterais como chamadas à API",
+      "Estilizar componentes com Tailwind"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 14,
+    "category": "reacttailwind",
+    "question": "Como funciona a renderização condicional em React?",
+    "options": [
+      "Usa `if/else` direto no return do componente",
+      "É feita apenas com switch",
+      "Usando expressões ternárias, operadores lógicos ou condições antes do return",
+      "Só é possível com Redux"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 15,
+    "category": "reacttailwind",
+    "question": "O que o Tailwind CSS faz?",
+    "options": [
+      "Substitui o React",
+      "Cria estilos automaticamente com IA",
+      "É um framework CSS com classes utilitárias para estilizar diretamente no HTML/JSX",
+      "É uma API de animações para React"
+    ],
+    "correctIndex": 2
+  }
+]
