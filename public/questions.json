@@ -61,6 +61,66 @@
   },
   {
     "id": 6,
+    "category": "htmlcss",
+    "question": "Qual a função da tag <meta> no HTML?",
+    "options": [
+      "Facilita a requisição de api.",
+      "Adiciona um título a página",
+      "Define o idioma da página",
+      "Descreve o conteúdo de uma página web"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 7,
+    "category": "htmlcss",
+    "question": "Para que serve o atributo `href` na tag `<a>`?",
+    "options": [
+      "Estilizar links",
+      "Indicar o destino do link",
+      "Adicionar um título ao link",
+      "Fazer upload de arquivos"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 8,
+    "category": "htmlcss",
+    "question": "O que o `display: flex` faz no CSS?",
+    "options": [
+      "Remove o elemento do layout",
+      "Transforma o container em um flex container para alinhar os itens",
+      "Aplica uma sombra",
+      "Cria um botão flexível"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 9,
+    "category": "htmlcss",
+    "question": "Qual a função da tag `<label>` no HTML?",
+    "options": [
+      "Estilizar formulários",
+      "Exibir mensagens de erro",
+      "Associar texto a um campo de formulário",
+      "Validar campos automaticamente"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 10,
+    "category": "htmlcss",
+    "question": "O que `z-index` controla no CSS?",
+    "options": [
+      "Tamanho da fonte",
+      "A cor de fundo",
+      "A ordem de empilhamento de elementos",
+      "A opacidade do texto"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 11,
     "category": "javascripttypescript",
     "question": "Qual a diferença entre `var`, `let` e `const`?",
     "options": [
@@ -72,7 +132,7 @@
     "correctIndex": 1
   },
   {
-    "id": 7,
+    "id": 12,
     "category": "javascripttypescript",
     "question": "O que é uma closure em JavaScript?",
     "options": [
@@ -84,7 +144,7 @@
     "correctIndex": 1
   },
   {
-    "id": 8,
+    "id": 13,
     "category": "javascripttypescript",
     "question": "O que é uma Promise?",
     "options": [
@@ -96,7 +156,7 @@
     "correctIndex": 2
   },
   {
-    "id": 9,
+    "id": 14,
     "category": "javascripttypescript",
     "question": "Quais as vantagens do TypeScript sobre JavaScript puro?",
     "options": [
@@ -108,7 +168,7 @@
     "correctIndex": 1
   },
   {
-    "id": 10,
+    "id": 15,
     "category": "javascripttypescript",
     "question": "Como funciona a tipagem no TypeScript?",
     "options": [
@@ -120,7 +180,67 @@
     "correctIndex": 2
   },
   {
-    "id": 11,
+    "id": 16,
+    "category": "javascripttypescript",
+    "question": "O que significa o termo 'hoisting' em JavaScript?",
+    "options": [
+      "Funções assíncronas",
+      "Movimentar variáveis e funções para o topo do escopo",
+      "Executar código mais rápido",
+      "Importar módulos automaticamente"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 17,
+    "category": "javascripttypescript",
+    "question": "Qual o resultado de `typeof []` em JavaScript?",
+    "options": [
+      "`object`",
+      "`array`",
+      "`undefined`",
+      "`list`"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 18,
+    "category": "javascripttypescript",
+    "question": "Para que serve o operador `??` (nullish coalescing)?",
+    "options": [
+      "Verifica igualdade estrita",
+      "Define variáveis constantes",
+      "Retorna o lado direito apenas se o lado esquerdo for null ou undefined",
+      "Concatena strings"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 19,
+    "category": "javascripttypescript",
+    "question": "O que são tipos literais em TypeScript?",
+    "options": [
+      "Tipos que só existem no console",
+      "Tipos fixos e exatos como 'success' ou 42",
+      "Tipos de texto grandes",
+      "Tipos que só funcionam com números"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 20,
+    "category": "javascripttypescript",
+    "question": "O que o método `map()` faz em arrays?",
+    "options": [
+      "Remove itens duplicados",
+      "Retorna o primeiro item do array",
+      "Cria um novo array aplicando uma função a cada item",
+      "Filtra elementos falsy"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 21,
     "category": "reacttailwind",
     "question": "Qual a diferença entre componente de classe e componente funcional no React?",
     "options": [
@@ -132,7 +252,7 @@
     "correctIndex": 1
   },
   {
-    "id": 12,
+    "id": 22,
     "category": "reacttailwind",
     "question": "O que são Hooks no React?",
     "options": [
@@ -144,7 +264,7 @@
     "correctIndex": 1
   },
   {
-    "id": 13,
+    "id": 23,
     "category": "reacttailwind",
     "question": "Para que serve o `useEffect` no React?",
     "options": [
@@ -156,7 +276,7 @@
     "correctIndex": 2
   },
   {
-    "id": 14,
+    "id": 24,
     "category": "reacttailwind",
     "question": "Como funciona a renderização condicional em React?",
     "options": [
@@ -168,7 +288,7 @@
     "correctIndex": 2
   },
   {
-    "id": 15,
+    "id": 25,
     "category": "reacttailwind",
     "question": "O que o Tailwind CSS faz?",
     "options": [
@@ -176,6 +296,66 @@
       "Cria estilos automaticamente com IA",
       "É um framework CSS com classes utilitárias para estilizar diretamente no HTML/JSX",
       "É uma API de animações para React"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 26,
+    "category": "reacttailwind",
+    "question": "Para que serve o `useState` em React?",
+    "options": [
+      "Criar variáveis de estilo",
+      "Executar animações",
+      "Gerenciar estado em componentes funcionais",
+      "Importar dados externos"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 27,
+    "category": "reacttailwind",
+    "question": "O que o `key` faz em uma lista de elementos renderizados?",
+    "options": [
+      "Define o estilo de cada item",
+      "Cria rotas automáticas",
+      "Ajuda o React a identificar quais itens mudaram",
+      "Serve para criptografar os dados"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 28,
+    "category": "reacttailwind",
+    "question": "Como o Tailwind aplica estilos aos elementos?",
+    "options": [
+      "Usa classes baseadas em utilitários diretamente no HTML/JSX",
+      "Cria arquivos de estilo automaticamente",
+      "Aplica CSS inline via JavaScript",
+      "Depende de arquivos JSON externos"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 29,
+    "category": "reacttailwind",
+    "question": "O que faz o hook `useRef`?",
+    "options": [
+      "Cria referências para elementos DOM ou valores mutáveis sem re-render",
+      "Atualiza o estado de forma assíncrona",
+      "Serve apenas para animações",
+      "Modifica diretamente o CSS do componente"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 30,
+    "category": "reacttailwind",
+    "question": "Qual o papel do `children` em um componente React?",
+    "options": [
+      "Representar um valor booleano",
+      "Importar bibliotecas",
+      "Receber e renderizar elementos passados entre tags do componente",
+      "Criar variáveis locais"
     ],
     "correctIndex": 2
   }

@@ -1,4 +1,5 @@
 "use client"
+import { Finished } from "@/components/finished";
 import { QuestionCard } from "@/components/question-card";
 import { question } from "@/types/question";
 import { useParams } from "next/navigation";
@@ -59,7 +60,7 @@ export default function Home() {
          } else {
             setFinished(true);
          }
-      }, 2000);
+      }, 200);
    }
 
    function handleFormatCategory(categoria: string | null) {
@@ -78,23 +79,34 @@ export default function Home() {
    return (
       <div className="bg-[var(--bg-color)] text-white">
          <div className="container mx-auto min-h-screen flex justify-center items-center flex-col gap-6 p-4">
-            <h1 className="text-xl mt-20 mb-10">Quiz {categoryFormatted}</h1>
             {finished ?
-               <div>{correctAnswers} / {questionsByCategory.length}</div>
-            :
-               <div>
-                  {questionsByCategory.length > 0 &&
-                     <QuestionCard
-                        question={questionsByCategory[currentQuestionIndex].question}
-                        current={questionsByCategory[currentQuestionIndex].id}
-                        options={questionsByCategory[currentQuestionIndex].options}
-                        onSelect={(optionIndex) => handleOptionSelected(optionIndex, questionsByCategory[currentQuestionIndex])}
-                        selectedOptionIndex={selectedOptionIndex}
-                        isAnswerCorrect={isAnswerCorrect}
-                        questionsLength={questionsByCategory.length}
-                     />
-                  }
-               </div>
+               <>
+                  <h1 className="text-xl mt-20 mb-5 font-bold">Fim do quiz {categoryFormatted}</h1>
+                  <Finished
+                     correctAnswers={correctAnswers}
+                     lengthQuestions={questionsByCategory.length}
+                     categoria={categoria || ''}
+                  />
+               </>
+               :
+               <>
+                  <h1 className="text-xl mt-20 mb-10 font-bold">Quiz {categoryFormatted}</h1>
+                  <div>
+                     {questionsByCategory.length > 0 &&
+                        <QuestionCard
+                           currentQuestionIndex={currentQuestionIndex}
+                           currentQuestion={questionsByCategory[currentQuestionIndex]}
+                           question={questionsByCategory[currentQuestionIndex].question}
+                           current={questionsByCategory[currentQuestionIndex].id}
+                           options={questionsByCategory[currentQuestionIndex].options}
+                           onSelect={(optionIndex) => handleOptionSelected(optionIndex, questionsByCategory[currentQuestionIndex])}
+                           selectedOptionIndex={selectedOptionIndex}
+                           isAnswerCorrect={isAnswerCorrect}
+                           questionsLength={questionsByCategory.length}
+                        />
+                     }
+                  </div>
+               </>
             }
          </div>
       </div>
