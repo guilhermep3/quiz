@@ -57,7 +57,6 @@ export default function Home() {
          if (currentQuestionIndex + 1 < questionsByCategory.length) {
             setCurrentQuestionIndex(prev => prev + 1);
          } else {
-            console.log("Quiz finalizado!");
             setFinished(true);
          }
       }, 2000);
@@ -79,7 +78,7 @@ export default function Home() {
    return (
       <div className="bg-[var(--bg-color)] text-white">
          <div className="container mx-auto min-h-screen flex justify-center items-center flex-col gap-6 p-4">
-            <h1 className="text-2xl mt-20 mb-10">Quiz {categoryFormatted}</h1>
+            <h1 className="text-xl mt-20 mb-10">Quiz {categoryFormatted}</h1>
             {finished ?
                <div>{correctAnswers} / {questionsByCategory.length}</div>
             :
@@ -92,6 +91,7 @@ export default function Home() {
                         onSelect={(optionIndex) => handleOptionSelected(optionIndex, questionsByCategory[currentQuestionIndex])}
                         selectedOptionIndex={selectedOptionIndex}
                         isAnswerCorrect={isAnswerCorrect}
+                        questionsLength={questionsByCategory.length}
                      />
                   }
                </div>

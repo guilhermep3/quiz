@@ -1,4 +1,3 @@
-import { ReactNode } from "react"
 
 type props = {
    question: string;
@@ -7,15 +6,18 @@ type props = {
    onSelect: (index: number) => void;
    selectedOptionIndex: number | null;
    isAnswerCorrect: boolean | null;
+   questionsLength: number;
 }
-export const QuestionCard = ({ question, current, options, onSelect, selectedOptionIndex, isAnswerCorrect }: props) => {
+export const QuestionCard = ({ question, current, options, onSelect, selectedOptionIndex, isAnswerCorrect, questionsLength }: props) => {
 
    return (
-      <div className="relative max-w-[500px] w-full bg-gray-800 p-6 rounded-xl mb-12 text-center">
-         <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-zinc-900 size-12 flex justify-center items-center
-            rounded-full border-4 border-gray-800 text-lg font-bold">
-            {current}
+      <div className="relative max-w-[500px] w-full bg-gray-700 p-6 rounded-xl mb-12 text-center">
+         <div className="border-8 border-gray-700 absolute -top-8 left-1/2 -translate-x-1/2 bg-zinc-900 size-16 flex justify-center items-center
+            rounded-full text-2xl font-bold">
+               <span className="z-20">{current}</span>
+            
          </div>
+         <div className="text-sm text-zinc-400 text-start mt-2">Pergunta {current} de {questionsLength}</div>
          <p className="text-lg my-4">{question}</p>
          <div className="w-full flex flex-col gap-2">
             {options.map((option, index) => {

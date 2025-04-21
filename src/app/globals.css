@@ -6,11 +6,36 @@
   --foreground: #171717;
   --primary-color: #2D68C4;
   --primary-color-2: #2075ff;
-  --bg-color: #091822;
+  --bg-color: #0f2433;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: "Roboto", sans-serif;
+}
+
+.border-animated{
+  position: relative;
+  overflow: hidden;
+}
+.border-animated::before{
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 200%;
+  background-color: var(--primary-color);
+  animation: border 2s linear infinite;
+}
+@keyframes border {
+  100% {
+     transform: rotate(360deg);
+  }
+}
+.border-animated::after{
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border-radius: inherit;
+  background-color: var(--foreground);
 }
